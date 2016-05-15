@@ -10,7 +10,7 @@ A Web Authentication Implementation
 
 > Client Directory structure: [Best Practice Recommendations for Angular App Structure](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub)
 
-* client: [AngularJS-1(latest)](https://angularjs.org/) [Angular-Material](https://material.angularjs.org/latest/)
+* client: [AngularJS-1(latest)](https://angularjs.org/)              [Angular-Material](https://material.angularjs.org/latest/)
 * server: [Koa](http://koajs.com/) MongoDB(mongoose)
 
 ## Getting started

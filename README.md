@@ -13,7 +13,7 @@ enjoy it..
 
 ## Apps
 
-1. [JWTs authenticate implementation with AngularJS Angular Material KoaJS And MongoDB](https://github.com/nepaul/web-demos/tree/master/jwt-authenticate-angular)
+1. [JWTs authenticate implementation with AngularJS Angular-Material KoaJS And MongoDB](https://github.com/nepaul/web-demos/tree/master/jwt-authenticate-angular)
 
 ## Author
 [Poe Nee](http://nepaul.github.io/)([@xsnepaul](https://twitter.com/xsnepaul) on Twitter)
