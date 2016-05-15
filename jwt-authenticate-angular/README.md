@@ -1,4 +1,4 @@
-# Jwt-Authentication-Angular
+# JWT-Authentication-Angular
 
 ## Links
 
