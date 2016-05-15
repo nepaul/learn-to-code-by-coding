@@ -1,0 +1,52 @@
+<div style="margin-top: 10%" layout="column">
+  <md-content>
+    <form name="registerForm" flex="50" flex-offset="25">
+      <h1 layout="row" layout-align="center center">Create An Account</h1>
+
+      <md-input-container class="md-block">
+        <label>Email</label>
+        <input required="" type="email" name="email"
+               ng-model="vm.credentials.email" ng-pattern="/^.+@.+\..+$/"/>
+        <div ng-messages="registerForm.email.$error" role="alert">
+          <div ng-message-exp="['required', 'pattern']">Your email
+            must be look like an e-mail address
+          </div>
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-block">
+        <label>Password</label>
+        <input required="" type="password" name="password"
+               ng-model="vm.credentials.password"
+               minlength="8" maxlength="30"
+               ng-pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]/"/>
+        <div ng-messages="registerForm.password.$error" role="alert">
+          <div
+              ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+            Your password must be between 8 and 30 characters long
+            and at least 1 Uppercase Alphabet, 1 Lowercase
+            Alphabet, 1 Number and 1 Special Character
+          </div>
+        </div>
+      </md-input-container>
+      <div layout="row">
+        <!--<div flex="40" layout="row" layout-align="start center">-->
+        <!--<md-checkbox ng-model="vm.isNeedLoggedIn" aria-label="">-->
+        <!--Keep me logged in-->
+        <!--</md-checkbox>-->
+        <!--</div>-->
+        <div class="black-button" flex="60" layout="row"
+             layout-align="end center">
+          <button type="submit" class="md-button register-button"
+                  ng-click="vm.register(vm.credentials)"
+                  ng-disabled="registerForm.$invalid">
+            Create Account
+          </button>
+        </div>
+      </div>
+
+    </form>
+  </md-content>
+
+</div>
+

@@ -1,0 +1,17 @@
+@import url(//fonts.useso.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
+
+html {
+    font-family: 'Roboto Slab', serif;
+}
+
+.l-right {
+    float: right
+}
+
+md-toolbar:not(.md-menu-toolbar){
+    background-color: #FFF;
+}
+
+md-toolbar:not(.md-menu-toolbar) .md-button:not(.md-raised){
+    color: #323A45;
+}

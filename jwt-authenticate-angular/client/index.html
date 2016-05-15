@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="client">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+  <title>JWT Auth Angular</title>
+
+  <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+  <link rel="stylesheet" href="node_modules/angular-toastr/dist/angular-toastr.min.css">
+
+  <link rel="stylesheet" href="app/index.css">
+  <link rel="stylesheet" href="app/components/mainNavbar/mainNavbar.css">
+  <link rel="stylesheet" href="app/auth/auth.css">
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ui-view></div>
+
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/angular-aria/angular-aria.min.js"></script>
+<script src="node_modules/angular-animate/angular-animate.min.js"></script>
+<script src="node_modules/angular-messages/angular-messages.min.js"></script>
+<script src="node_modules/angular-material/angular-material.min.js"></script>
+<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="node_modules/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+
+
+<script src="app/index.module.js"></script>
+<script src="app/index.route.js"></script>
+<script src="app/index.config.js"></script>
+<script src="app/index.run.js"></script>
+<script src="app/index.constants.js"></script>
+
+<script src="app/components/mainNavbar/mainNavbar.directive.js"></script>
+<script src="app/components/navbar/navbar.deirective.js"></script>
+
+<script src="app/auth/auth.constant.js"></script>
+<script src="app/auth/auth.config.js"></script>
+<script src="app/auth/auth.interceptor.factory.js"></script>
+<script src="app/auth/auth.service.js"></script>
+<script src="app/auth/auth.user.service.js"></script>
+<script src="app/auth/auth.register.controller.js"></script>
+<script src="app/auth/auth.login.controller.js"></script>
+<script src="app/dashboard/dashboard.js"></script>
+
+</body>
+</html>

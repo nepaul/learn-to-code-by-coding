@@ -1,0 +1,27 @@
+.register-button {
+  color: #fff;
+  font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: black;
+  padding: 10px 16px;
+}
+
+.login-button {
+  color: #fff;
+  font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: black;
+  padding: 10px 35px;
+}
+
+.form-line-forgot-password a {
+  color: rgb(153, 153, 153);
+  border-bottom: 1px dotted rgba(153, 153, 153, 0.701961) !important;
+}
+
+a:link {
+  text-decoration: none;
+}
+
