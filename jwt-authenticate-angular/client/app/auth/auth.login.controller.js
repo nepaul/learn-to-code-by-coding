@@ -16,7 +16,7 @@
     function login(credentials) {
       $window.sessionStorage['isKeepLoggedIn'] = vm.isKeepLoggedIn;
       userService.login(credentials.email, credentials.password)
-        .then(handleRequest)
+        .then(handleRequest, handleRequest);
     }
 
     function handleRequest(res) {
