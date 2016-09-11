@@ -8,6 +8,7 @@
   authInterceptor.$inject = ['API', 'AUTH_EVENTS', 'auth', '$q', '$rootScope'];
   function authInterceptor(API, AUTH_EVENTS, auth, $q, $rootScope) {
     //TODO: use httpBuffer: retry request
+    // https://github.com/witoldsz/angular-http-auth
     var interceptor = {
       request: request,
       response: response,
