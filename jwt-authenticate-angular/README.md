@@ -28,4 +28,4 @@ cd server && npm install
 [Poe Nee](http://nepaul.github.io/)([@xsnepaul](https://twitter.com/xsnepaul) on Twitter)
 
 ## License
-MIT
+[MIT](https://github.com/nepaul/web-demos/blob/master/LICENSE)

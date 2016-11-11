@@ -21,4 +21,4 @@ All web apps of this repository, you can install run and use them directly.
 [Poe Nee](http://nepaul.github.io/)([@xsnepaul](https://twitter.com/xsnepaul) on Twitter)
 
 ## Licensing
-MIT
+[MIT](https://github.com/nepaul/web-demos/blob/master/LICENSE)

@@ -21,9 +21,9 @@ open http://localhost:3000
 
 ### Author
 
-[Poe Nee](nepaul.github.io)([@xsnepaul]()(https://twitter.com/xsnepaul) on Twitter)
+[Poe Nee](nepaul.github.io)([@xsnepaul](https://twitter.com/xsnepaul) on Twitter)
 
 
 ### License
 
-MIT
+[MIT](https://github.com/nepaul/web-demos/blob/master/LICENSE)
