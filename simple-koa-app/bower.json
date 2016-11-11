@@ -1,0 +1,20 @@
+{
+  "name": "simple-koa-app",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Poe Nee"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.2.1"
+  }
+}

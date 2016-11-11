@@ -1,0 +1,40 @@
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--10-col mdl-cell--1-offset" >
+     <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width: 100%">
+    <thead>
+      <tr>
+        <th class="mdl-data-table__cell--non-numeric">Date</th>
+        <th>User</th>
+        <th>Project</th>
+        <th>Video</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% infos.forEach(function (info) {%>
+        <tr>
+          <%
+          var date = new Date(info.date);
+          var Y = date.getFullYear() + '-';
+          var M = (date.getMonth()+ 1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+          var D = date.getDate() + ' ';
+          var h = date.getHours() + ':';
+          var m = date.getMinutes() + ':';
+          var s = date.getSeconds() < 10 ? '0' + date.getSeconds(): date.getSeconds();
+          info.date = Y + M + D + h + m + s;
+          %>
+            <td>
+              <%= info.date %>
+            </td>
+            <td>
+              <%= info.user %>
+            </td>
+            <td>
+              <%= info.project %>
+            </td>
+            <td><a target="_blank" href="<%= info.video %>">Play</a></td>
+        </tr>
+        <% }) %>
+    </tbody>
+  </table>
+  </div>
+</div>

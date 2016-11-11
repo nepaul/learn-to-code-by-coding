@@ -1,0 +1,27 @@
+{
+  "name": "react-redux-jwt",
+  "version": "0.1.0",
+  "description": "React Redux Starter Kit Jwt-Auth",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nepaul/web-demos.git"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "React-Router",
+    "JWT"
+  ],
+  "author": "Poe Nee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nepaul/web-demos/issues"
+  },
+  "homepage": "https://github.com/nepaul/web-demos#readme",
+  "engines": {
+    "node": ">=4"
+  }
+}
