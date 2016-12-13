@@ -16,6 +16,8 @@ All web apps of this repository, you can install run and use them directly.
 
 1. [jwt-authenticate-angular](https://github.com/nepaul/web-demos/tree/master/jwt-authenticate-angular): JWTs authenticate implementation with AngularJS Angular-Material KoaJS And MongoDB
 2. [simple-koa-app](https://github.com/nepaul/web-demos/tree/master/simple-koa-app): A simple KoaJS app implementation with KoaJS SQLite3 Ejs and [MDL](https://getmdl.io/started)
+3. [serve-static-content](https://github.com/nepaul/learn-web-development-by-codes/tree/master/serve-static-content) Please use Nginx before your NodeJS APP ! It's a comparession about serving static content with [Nginx](https://www.nginx.com/resources/wiki/) and [NodeJS](https://nodejs.org/en/)
+
 
 ## Author
 [Poe Nee](http://nepaul.github.io/)([@xsnepaul](https://twitter.com/xsnepaul) on Twitter)
