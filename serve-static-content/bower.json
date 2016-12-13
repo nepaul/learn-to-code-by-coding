@@ -1,0 +1,26 @@
+{
+  "name": "serve-static-content",
+  "description": "compare serve static content with nodejs or nginx",
+  "main": "app.js",
+  "authors": [
+    "Poe Nee"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "nodejs",
+    "nginx",
+    "serve-static-content",
+    "koajs"
+  ],
+  "homepage": "https://github.com/nepaul/learn-web-development-by-codes",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

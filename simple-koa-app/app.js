@@ -30,7 +30,7 @@ function* upMigration() {
     table.string('user', 100);
     table.string('project', 100);
     table.string('video', 100);
-    table.text('questionnaire');
+    table.text('survey');
   });
 }
 

@@ -1,0 +1,25 @@
+{
+  "name": "serve-static-content",
+  "version": "1.0.0",
+  "description": "compare serve static content with nodejs or nginx",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nepaul/learn-web-development-by-codes/tree/master/serve-static-content"
+  },
+  "keywords": [
+    "nodejs",
+    "nginx",
+    "serve-static-content",
+    "koajs"
+  ],
+  "author": "Poe Nee",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "koa-static": "^2.0.0"
+  }
+}
