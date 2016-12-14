@@ -4,8 +4,10 @@ A comparession about serve static content which use NodeJS or Nginx.
 
 **CONCLUSION**: Please use nginx to serve static content.
 
-[Good to read - 5 Performance Tips for Node.js Applications](https://www.nginx.com/blog/5-performance-tips-for-node-js-applications/)
+**Good to read**
 
+* [5 Performance Tips for Node.js Applications](https://www.nginx.com/blog/5-performance-tips-for-node-js-applications/)
+* [Nginx - SERVING STATIC CONTENT](https://www.nginx.com/resources/admin-guide/serving-static-content/)
 
 
 ## Getting started
