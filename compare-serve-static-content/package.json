@@ -4,6 +4,8 @@
   "description": "compare serve static content with nodejs or nginx",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "postinstall": "bower install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
