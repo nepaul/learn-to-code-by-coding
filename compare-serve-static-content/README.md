@@ -1,6 +1,7 @@
 # Serve Static Content 
 
 A comparession about serve static content which use NodeJS or Nginx.
+Try to fetch one css file, two js file and one imgae, you can check the `public/index.html` for detail information.
 
 **CONCLUSION**: Please use nginx to serve static content.
 
