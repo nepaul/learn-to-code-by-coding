@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>H264 Live Streaming</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    if (!('WebSocket' in window)) {
+      alert('Your browser is not support WebSocket. Please use modern browsers.');
+      location.href = "http://caniuse.com/#feat=websockets";
+    }
+  </script>
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div>
+    <ul class="list-group" id="h264-files">
+      <li class="list-group-item live-stream">
+        <button id="play-live" type="button" class="btn-success pointer">Play Live Stream</button>
+        <button id="stop-live" type="button" class="btn-danger pointer">Stop Live Stream</button>
+      </li>
+    </ul>
+  </div>
+  <div id="h264-player" align="center"></div>
+
+  <script src="./vendor/Broadway/Player/Decoder.js"></script>
+  <script src="./vendor/Broadway/Player/YUVCanvas.js"></script>
+  <script src="./vendor/Broadway/Player/Player.js"></script>
+  <script src="./javascript/stream-player.js"></script>
+</body>
+
+</html>

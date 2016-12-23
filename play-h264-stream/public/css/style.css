@@ -1,0 +1,32 @@
+.list-group {
+  padding-left: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 720px;
+  margin: auto;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
