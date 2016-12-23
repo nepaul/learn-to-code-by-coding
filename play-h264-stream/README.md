@@ -1,6 +1,6 @@
 > Play H264 Static Files and live stream(You need add a stream server on the server side) on the web.
 
-![play-h264](https://github.com/nepaul/learn-web-development-by-codes/tree/master/play-h264-stream/doc/play-h264.gif)
+![play-h264](https://cloud.githubusercontent.com/assets/1112181/21450568/49d40c64-c933-11e6-9eb8-0afefc73fd29.gif)
 
 ## What you can learn
 
