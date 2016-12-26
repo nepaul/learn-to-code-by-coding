@@ -1,0 +1,36 @@
+{
+  "name": "z-koa2-expmple-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon --exec npm run start",
+    "test":"npm run build; mocha --require 'babel-polyfill' --compilers js:babel-register",
+    "build": "babel src -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "ioredis": "^2.4.3",
+    "kcors": "^2.2.0",
+    "koa": "^2.0.0-alpha.7",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^7.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.4",
+    "babel-register": "^6.18.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^2.0.1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
