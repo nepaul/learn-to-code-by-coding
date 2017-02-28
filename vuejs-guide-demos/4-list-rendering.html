@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <ul id="example-1">
+    <li v-for="item in items">
+      {{ item.message }}
+    </li>
+  </ul>
+
+  <ul id="example-2-with-index">
+    <li v-for="(item, index) in items">
+      {{ parentMessage }} - {{ index }} - {{ item.message }}
+    </li>
+  </ul>
+
+  <ul id="vfor-template">
+    <template v-for="item in items">
+      <li>{{ item.message }}</li>
+      <li>-----</li>
+    </template>
+  </ul>
+
+  <ul id="repeat-object">
+    <!-- "key"" and "index" are optional-->
+    <li v-for="(value, key, index) in object"> {{ index }}. {{ key }}:{{ value}} </li>
+  </ul>
+
+  <div id="range">
+    <span v-for="n in 10">{{ n }}</span>
+  </div>
+
+  <script src="./node_modules/vue/dist/vue.js"></script>
+  <script>
+    var example1 = new Vue({
+      el: '#example-1',
+      data: {
+        items: [{
+            message: 'Foo'
+          },
+          {
+            message: 'Bar'
+          },
+        ],
+      },
+    });
+
+    var example2 = new Vue({
+      el: '#example-2-with-index',
+      data: {
+        parentMessage: 'Parent',
+        items: [{
+            message: 'Foo'
+          },
+          {
+            message: 'Bar'
+          },
+        ],
+      },
+    });
+
+    var vforTemplate = new Vue({
+      el: '#vfor-template',
+      data: {
+        items: [{
+            message: 'Foo'
+          },
+          {
+            message: 'Bar'
+          },
+        ],
+      },
+    });
+
+    var repeatObject = new Vue({
+      el: '#repeat-object',
+      data: {
+        object: {
+          FirstName: 'John',
+          LastName: 'Doe',
+          Age: 30
+        },
+      }
+    });
+
+    var range = new Vue({
+      el: '#range',
+    });
+
+  </script>
+</body>
+
+</html>

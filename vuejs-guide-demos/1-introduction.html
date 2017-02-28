@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Hello Vue</title>
   <link rel="stylesheet" href="style.css">
-  <script src="./node_modules/vue/dist/vue.js"></script>
 </head>
 
 <body>
@@ -48,6 +47,7 @@
       <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
     </ol>
   </div>
+  <script src="./node_modules/vue/dist/vue.js"></script>
   <script>
     var app = new Vue({
       el: '#app',

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="example-1">
+    <button v-on:click="counter += 1">Add 1</button>
+    <p>The button above has been clicked {{ counter }} times.</p>
+  </div>
+  <div id="example-2">
+    <!-- `greet` is the name of a method defined below -->
+    <button v-on:click="greet">Greet</button>
+  </div>
+  <div id="example-3">
+    <button v-on:click="say('hi')">Say hi</button>
+    <button v-on:click="say('what')">Say what</button>
+  </div>
+  <script src="./node_modules/vue/dist/vue.js"></script>
+  <script>
+    var example1 = new Vue({
+      el: '#example-1',
+      data: {
+        counter: 0,
+      },
+    });
+
+    var example2 = new Vue({
+      el: '#example-2',
+      data: {
+        name: 'Vue.js'
+      },
+      // define methods under the `methods` object
+      methods: {
+        greet: function (event) {
+          // `this` inside methods points to the Vue instance
+          alert('Hello ' + this.name + '!')
+          // `event` is the native DOM event
+          if (event) {
+            alert(event.target.tagName)
+          }
+        }
+      }
+    });
+    // you can invoke methods in JavaScript too
+    example2.greet(); // -> 'Hello Vue.js!'
+
+
+    new Vue({
+      el: '#example-3',
+      methods: {
+        say: function (message) {
+          alert(message);
+        },
+      },
+    })
+
+  </script>
+</body>
+
+</html>

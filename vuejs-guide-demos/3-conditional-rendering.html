@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="if-example">
+    <button v-on:click="ok = !ok">Click to change</button>
+    <h1 v-if="ok">Yes</h1>
+    <h1 v-else>No</h1>
+    <template v-if="okTemplate">
+      <h1>Title</h1>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+    </template>
+  </div>
+
+  <div id="no-key-example">
+    <template v-if="loginType == 'username'">
+      <label>Username</label>
+      <input placeholder="Enter your username">
+    </template>
+    <template v-else>
+      <label>Email</label>
+      <input placeholder="Enter your email address">
+    </template>
+    <button v-on:click="toggleLoginType">Toggle login type</button>
+  </div>
+
+  <div id="key-example">
+    <template v-if="loginType == 'username'">
+      <label>Username</label>
+      <input placeholder="Enter your username" key="username-input">
+    </template>
+    <template v-else>
+      <label>Email</label>
+      <input placeholder="Enter your email address" key="email-input">
+    </template>
+    <button v-on:click="toggleLoginType()">Toggle login type</button>
+  </div>
+
+  <script src="./node_modules/vue/dist/vue.js"></script>
+  <script>
+    var vm = new Vue({
+      el: '#if-example',
+      data: {
+        ok: true,
+        okTemplate: true,
+      },
+    });
+    var noKeyExampleVM = new Vue({
+      el: '#no-key-example',
+      data: {
+        loginType: 'username',
+      },
+      methods: {
+        toggleLoginType: function () {
+          return this.loginType = this.loginType === 'username' ? 'email' : 'username'
+        }
+      },
+    });
+    var keyExampleVM = new Vue({
+      el: '#key-example',
+      data: {
+        loginType: 'username',
+      },
+      methods: {
+        toggleLoginType: function () {
+          return this.loginType = this.loginType === 'username' ? 'email' : 'username'
+        }
+      },
+    });
+
+  </script>
+</body>
+
+</html>
