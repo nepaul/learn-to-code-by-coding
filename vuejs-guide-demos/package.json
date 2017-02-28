@@ -1,0 +1,21 @@
+{
+  "name": "vuejs-guide-demos",
+  "version": "0.1.0",
+  "description": "vuejs official guild code demos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nepaul/learn-web-development-by-codes/tree/master/vuejs-guide-demos"
+  },
+  "keywords": [
+    "vuejs"
+  ],
+  "author": "[Poe Nee] (http://nepaul.github.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.2.1"
+  }
+}
