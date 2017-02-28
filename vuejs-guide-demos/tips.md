@@ -15,3 +15,4 @@
 - **list-rendering: [key](https://cn.vuejs.org/v2/guide/list.html#key)????????**
 - browser rendering
 - DOM event
+- By default, v-model syncs the input with the data after each input event (with the exception of IME composition as stated above). You can add the lazy modifier to instead sync after change events:

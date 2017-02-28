@@ -9,8 +9,141 @@
 </head>
 
 <body>
+  <div id="example-1">
+    <input v-model="message" placeholder="edit me">
+    <p>Message is: {{ message }}</p>
+  </div>
+  <div id="example-2">
+    <span>Multiline message is:</span>
+    <p>{{ message }}</p>
+    <br>
+    <textarea v-model="message" placeholder="add multiple lines"></textarea>
+  </div>
+  <div id="example-3">
+    <input type="checkbox" id="checkbox" v-model="checked">
+    <label for="checkbox">{{ checked }}</label>
+  </div>
+  <div id="example-4">
+    <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+    <label for="jack">Jack</label>
+    <input type="checkbox" id="john" value="John" v-model="checkedNames">
+    <label for="john">John</label>
+    <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+    <label for="mike">Mike</label>
+    <br>
+    <span>Checked names: {{ checkedNames }}</span>
+  </div>
+  <div id="example-5">
+    <input type="radio" id="one" value="One" v-model="picked">
+    <label for="one">One</label>
+    <br>
+    <input type="radio" id="two" value="Two" v-model="picked">
+    <label for="two">Two</label>
+    <br>
+    <span>Picked: {{ picked }}</span>
+  </div>
+  <div id="example-6">
+    <select v-model="selected">
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+    </select>
+    <span>Selected: {{ selected }}</span>
+  </div>
+  <div id="example-7">
+    <select v-model="selected" multiple>
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+    </select>
+    <br>
+    <span>Selected: {{ selected }}</span>
+  </div>
+  <div id="example-8">
+    <select v-model="selected">
+      <option v-for="option in options" v-bind:value="option.value">
+        {{ option.text }}
+      </option>
+    </select>
+    <span>Selected: {{ selected }}</span>
+  </div>
+  <div id="exapmle-9-modifiers">
+    <input type="number" v-model.number="age">
+    <span>age: {{age}}</span>
+    <br>
+    <input v-model.trim="msg">
+    <span> message length: {{ msg.length }}</span>
+  </div>
   <script src="./node_modules/vue/dist/vue.js"></script>
   <script>
+    var example1 = new Vue({
+      el: '#example-1',
+      data: {
+        message: '',
+      },
+    });
+    var example2 = new Vue({
+      el: '#example-2',
+      data: {
+        message: '',
+      },
+    });
+    var example3 = new Vue({
+      el: '#example-3',
+      data: {
+        checked: false,
+      },
+    });
+    var example4 = new Vue({
+      el: '#example-4',
+      data: {
+        checkedNames: [],
+      },
+    });
+    var example5 = new Vue({
+      el: '#example-5',
+      data: {
+        picked: 'One',
+      },
+    });
+    var example6 = new Vue({
+      el: '#example-6',
+      data: {
+        selected: null,
+      },
+    });
+    var example7 = new Vue({
+      el: '#example-7',
+      data: {
+        selected: [],
+      },
+    });
+    var example8 = new Vue({
+      el: '#example-8',
+      data: {
+        selected: 'A',
+        options: [{
+            text: 'One',
+            value: 'A'
+          },
+          {
+            text: 'Two',
+            value: 'B'
+          },
+          {
+            text: 'Three',
+            value: 'C'
+          }
+        ],
+      },
+    });
+    var exapmle9Modifiers = new Vue({
+      el: '#exapmle-9-modifiers',
+      data: {
+        age: 0,
+        msg: '',
+      },
+    });
 
   </script>
 </body>
