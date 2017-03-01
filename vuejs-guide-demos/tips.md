@@ -24,3 +24,4 @@
 - By default, v-model syncs the input with the data after each input event (with the exception of IME composition as stated above). You can add the lazy modifier to instead sync after change events:
 - Binding Native Events to Components:There may be times when you want to listen for a native event on the root element of a component. In these cases, you can use the `.native` modifier for `v-on`. For example:`<my-component v-on:click.native="doTheThing></my-component>"`
 - [Compilation-Scope](https://vuejs.org/v2/guide/components.html#Compilation-Scope)
+- [component](https://vuejs.org/v2/guide/components.html)!!!!!!!
