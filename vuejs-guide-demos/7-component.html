@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="example">
+    <my-component></my-component>
+  </div>
+  <div id="example-2">
+    <simple-counter></simple-counter>
+    <simple-counter></simple-counter>
+    <simple-counter></simple-counter>
+  </div>
+  <div id="props-example-1">
+    <child message="hello!"></child>
+  </div>
+  <div id="props-example-2">
+    <input v-model="parentMsg">
+    <br>
+    <!--<child v-bind:my-message="parentMsg"></child>-->
+    <child :my-message="parentMsg"></child>
+  </div>
+  <div id="counter-event-example">
+    <p>{{ total }}</p>
+    <button-counter v-on:increment="incrementTotal"></button-counter>
+    <button-counter v-on:increment="incrementTotal"></button-counter>
+  </div>
+  <script src="./node_modules/vue/dist/vue.js"></script>
+  <script>
+    Vue.component('my-component', {
+      template: '<div>A custom component!</div>',
+    });
+    new Vue({
+      el: '#example',
+    });
+
+    // var data = {
+    //   counter: 0
+    // }
+    Vue.component('simple-counter', {
+      template: '<button v-on:click="counter += 1">{{ counter }}</button>',
+      // data is technically a function, so Vue won't
+      // complain, but we return the same object
+      // reference for each component instance
+      data: function () {
+        // return data;
+        //  instead returning a fresh data object
+        return {
+          counter: 0
+        }
+      }
+    })
+    new Vue({
+      el: '#example-2'
+    })
+
+    new Vue({
+      el: '#props-example-1',
+      components: {
+        child: {
+          props: ['message'],
+          template: '<span>{{ message }}</span>',
+        },
+      },
+    });
+
+    new Vue({
+      el: '#props-example-2',
+      data: {
+        parentMsg: 'Message from parent:',
+      },
+      components: {
+        child: {
+          props: ['myMessage'],
+          template: '<span>{{myMessage}}</span>',
+        }
+      }
+    });
+
+    Vue.component('button-counter', {
+      template: '<button v-on:click="increment">{{ counter }}</button>',
+      data: function () {
+        return {
+          counter: 0
+        };
+      },
+      methods: {
+        increment: function() {
+          this.counter += 1;
+          this.$emit('increment');
+        }
+      }
+    });
+    new Vue({
+      el: '#counter-event-example',
+      data: {
+        total: 0,
+      },
+      methods: {
+        incrementTotal: function () {
+          this.total += 1;
+        },
+      },
+    })
+  </script>
+</body>
+
+</html>
