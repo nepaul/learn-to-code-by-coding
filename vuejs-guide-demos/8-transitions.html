@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Transitions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./style.css" rel="stylesheet">
+  <script src="./node_modules/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="demo">
+    <button v-on:click="show = !show">
+        Toggle
+      </button>
+    <transition name="fade">
+      <p v-if="show">hello</p>
+    </transition>
+  </div>
+  <script>
+    new Vue({
+      el: '#demo',
+      data: {
+        show: true,
+      },
+    });
+
+  </script>
+
+  <div id="example-1">
+    <button @click="show = !show">
+        Toggle render
+      </button>
+      <transition name="slide-fade">
+        <p v-if="show">hello</p>
+      </transition>
+  </div>
+  <script>
+    new Vue({
+      el: '#example-1',
+      data: {
+        show: true,
+      }
+    });
+  </script>
+
+  <div id="example-2">
+    <button v-on:click="show = !show">Toggle show</button>
+    <transition name="bounce">
+      <p v-if="show">Look at me!</p>
+    </transition>
+  </div>
+  <script>
+    new Vue({
+      el: '#example-2',
+      data: {
+        show: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
