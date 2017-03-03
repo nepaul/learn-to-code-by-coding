@@ -1,0 +1,23 @@
+{
+  "name": "medium-like-image-loading-with-vuejs",
+  "version": "0.1.0",
+  "description": "medium like image loading with vue.js-2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nepaul/learn-web-development-by-codes/tree/master/medium-like-image-loading-with-vuejs"
+  },
+  "keywords": [
+    "vuejs",
+    "medium-like",
+    "image-loading"
+  ],
+  "author": "[Poe Nee] (http://nepaul.github.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.2.1"
+  }
+}

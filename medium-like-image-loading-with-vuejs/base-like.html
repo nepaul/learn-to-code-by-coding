@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Base Like</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    img {
+      height: 500px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="base-like">
+    <blurry-image-loader
+      src="https://cdn-images-1.medium.com/max/1800/1*sg-uLNm73whmdOgKlrQdZA.jpeg"
+      small-src="https://cdn-images-1.medium.com/freeze/max/27/1*sg-uLNm73whmdOgKlrQdZA.jpeg?q=20">
+    </blurry-image-loader>
+  </div>
+
+  <script src="./node_modules/vue/dist/vue.js"></script>
+  <script>
+    Vue.component('blurryImageLoader', {
+      props: [
+        'src',
+        'smallSrc',
+      ],
+      data: function () {
+        return {
+          imageSrc: this.smallSrc,
+        }
+      },
+      template: '<img :src=imageSrc></img>',
+      mounted: function () {
+        var that = this;
+        var img = new Image();
+        img.onload = function () {
+          that.imageSrc = that.src;
+        }
+        img.src = this.src;
+      }
+    });
+
+    new Vue({
+      el: '#base-like',
+    });
+
+  </script>
+</body>
+
+</html>
