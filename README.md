@@ -22,6 +22,7 @@ All web apps of this repository, you can install run and use them directly.
 6. [vuejs-guide-demos](https://github.com/nepaul/learn-web-development-by-codes/tree/master/vuejs-guide-demos): [Vue.js](https://vuejs.org) [official guide](https://vuejs.org/v2/guide/) code demos
 7. [web-workers](https://github.com/nepaul/learn-web-development-by-codes/tree/master/web-workers): A basic WebWorkers usage from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 8. [medium-like-image-loading-vuejs2](https://github.com/nepaul/learn-web-development-by-codes/tree/master/medium-like-image-loading-with-vuejs)
+9. [spider-scrapy](https://github.com/nepaul/learn-web-development-by-codes/tree/master/spider-scrapy): Crawing web by [scrapy](https://scrapy.org/)(A Fast and Powerful Scraping and Web Crawling Framework)
 
 ## Author
 [Poe Nee](http://nepaul.github.io/)([@xsnepaul](https://twitter.com/xsnepaul) on Twitter)
