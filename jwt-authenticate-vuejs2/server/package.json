@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "description": "A JWT authenticate app with vuejs2 koa2 and mysql.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JWT",
+    "VueJS",
+    "Koa2",
+    "MySQL"
+  ],
+  "author": "Poe Nee",
+  "license": "MIT"
+}
