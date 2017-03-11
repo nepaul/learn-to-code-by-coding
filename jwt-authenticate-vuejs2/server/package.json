@@ -4,7 +4,11 @@
   "description": "A JWT authenticate app with vuejs2 koa2 and mysql.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">7.6.0"
   },
   "keywords": [
     "JWT",
@@ -13,5 +17,12 @@
     "MySQL"
   ],
   "author": "Poe Nee",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.1.0",
+    "koa-bodyparser": "^4.1.0",
+    "koa-logger": "^2.0.1",
+    "koa-onerror": "^3.1.0",
+    "koa-router": "^5.4.0"
+  }
 }
