@@ -4,15 +4,12 @@ const bodyparser = require('koa-bodyparser');
 const logger = require('koa-logger');
 const Router = require('koa-router');
 const onerror = require('koa-onerror');
-const Sequelize = require('sequelize');
 
 const config = require('./config');
 const Routers = require('./router');
 
 
 const app = new Koa();
-const sequelize = new Sequelize(
-  config.DB.db, config.DB.user, config.DB.password, config.DB.options);
 
 app.init = async () => {
   onerror(app);

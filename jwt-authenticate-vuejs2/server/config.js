@@ -18,6 +18,10 @@ module.exports = {
       },
       // SQLite only
       // storage: path.normalize(`${__dirname}/sqlite.db`),
+      define: {
+        timestamps: true,
+        charset: 'utf8',
+      },
     },
   }
 
