@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "start-dev": "nodemon app.js",
+    "dev": "nodemon app.js --ingore node_modules/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -30,6 +30,10 @@
     "koa-onerror": "^3.1.0",
     "koa-router": "^5.4.0",
     "mysql": "^2.13.0",
-    "sequelize": "^3.30.2"
+    "sequelize": "^3.30.2",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }

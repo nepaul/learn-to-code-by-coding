@@ -1,15 +1,15 @@
 const joi = require('joi');
 const HttpStatusCodes = require('http-status-codes');
 const bcrypt = require('bcrypt');
-const jwt = require('jwt');
+const jwt = require('koa-jwt');
 
 const { User } = require('../model');
 const config = require('../config');
 
 
 const UserValidationRule = {
-    email: joi.email().required(),
-    password: Joi.string().regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,30}/)
+    email: joi.string().email().required(),
+    password: joi.string().regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,30}/)
 }
 
 async function create(ctx, next) {
