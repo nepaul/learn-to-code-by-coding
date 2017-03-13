@@ -19,11 +19,25 @@ async function create(ctx, next) {
   }
 
   const res = User.add(ctx.request.body);
-  ctx.body = { ...res };
+  ctx.body = { res };
   ctx.status = HttpStatusCodes.CREATED;
 }
 
 async function show(ctx, next) {
+  const { id } = ctx.params;
+
+  const validationResult = Joi.string().required().validate(id);
+  if (validationResult.error) {
+    ctx.throw(HttpStatus.BAD_REQUEST, validationResult.error.details[0].message);
+  }
+
+  try {
+    const res = User.findById(id);
+    ctx.body = { res };
+    ctx.status = HttpStatusCodes.OK;
+  } catch (error) {
+    ctx.throw(HttpStatusCodes.INTERNAL_SERVER_ERROR, error.msg);
+  }
 }
 
 async function login(ctx, next) {
