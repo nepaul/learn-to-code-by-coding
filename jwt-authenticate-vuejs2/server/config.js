@@ -4,6 +4,7 @@ const path = require('path');
 module.exports = {
   port: process.env.PORT || 3000,
   APIPrefix: '/api/v1',
+  secret: 'jwt-vue-secret',
   DB: {
     db: 'jwtvue',
     user: 'root',

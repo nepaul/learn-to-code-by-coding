@@ -21,8 +21,10 @@
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^1.0.2",
+    "joi": "^10.2.2",
     "koa": "^2.1.0",
     "koa-bodyparser": "^4.1.0",
+    "koa-jwt": "^3.0.0",
     "koa-logger": "^2.0.1",
     "koa-onerror": "^3.1.0",
     "koa-router": "^5.4.0",
