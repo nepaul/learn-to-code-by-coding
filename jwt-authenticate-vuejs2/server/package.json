@@ -21,6 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^1.0.2",
+    "http-status-codes": "^1.1.6",
     "joi": "^10.2.2",
     "koa": "^2.1.0",
     "koa-bodyparser": "^4.1.0",
