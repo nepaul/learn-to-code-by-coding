@@ -33,7 +33,7 @@ app.init = async () => {
       }
     }
   });
-  app.use(jwt( { secret: config.secret }));
+  app.use(jwt( { secret: config.secret }).unless({ path: [/^\/api\/v1\/auth/]}));
 
   const router = Routers.init();
   app
