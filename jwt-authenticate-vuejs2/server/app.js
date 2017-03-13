@@ -7,11 +7,15 @@ const onerror = require('koa-onerror');
 
 const config = require('./config');
 const Routers = require('./router');
-
+const models = require('./model');
 
 const app = new Koa();
 
 app.init = async () => {
+  const connection = await models.DBClient.sync({ force: false });
+  if (!connection) {
+    console.error('Init DB fail');
+  }
   onerror(app);
   app.use(bodyparser());
   app.use(logger());

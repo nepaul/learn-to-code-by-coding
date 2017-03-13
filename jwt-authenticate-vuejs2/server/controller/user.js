@@ -1,3 +1,5 @@
+const { User } = require('../model');
+
 async function create() {
 
 }

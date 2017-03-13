@@ -2,6 +2,8 @@ const path = require('path');
 
 const Sequelize = require('sequelize');
 
+const config = require('../config');
+
 
 const DBClient = new Sequelize(
   config.DB.db, config.DB.user, config.DB.password, config.DB.options);
