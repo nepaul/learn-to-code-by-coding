@@ -1,4 +1,7 @@
 const Sequelize = require('sequelize');
+const bcrypt = require('bcrypt');
+const uuidV4 = require('uuid/v4');
+
 
 module.exports = (sequelize) => {
   return sequelize.define('user', {
@@ -13,11 +16,7 @@ module.exports = (sequelize) => {
         isEmail: true,
       }
     },
-    salt: {
-      type: Sequelize.STRING(100),
-      allowNull: false,
-    },
-    passwordSha: {
+    password: {
       type: Sequelize.STRING(100),
     }
   }, {
@@ -28,9 +27,19 @@ module.exports = (sequelize) => {
       fields: ['email'],
     }],
     classMethods: {
-      add: async function add(user) {
-
+      add: async function add(userInfo) {
+        const salt = await bcrypt.genSalt(10);
+        userInfo.password = await bcrypt.hash(userInfo.password, salt);
+        userInfo.id = uuidV4();
+        const user = this.build(userInfo);
+        return await user.save();
       },
+      findByEmail: async function findByEmail(email) {
+        return await this.find({ where: { email }});
+      },
+      findByID: async function findByID(id) {
+        return await this.find({ where: { id }});
+      }
     },
   });
 }

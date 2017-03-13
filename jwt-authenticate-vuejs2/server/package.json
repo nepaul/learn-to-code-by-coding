@@ -20,6 +20,7 @@
   "author": "Poe Nee",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^1.0.2",
     "koa": "^2.1.0",
     "koa-bodyparser": "^4.1.0",
     "koa-logger": "^2.0.1",
