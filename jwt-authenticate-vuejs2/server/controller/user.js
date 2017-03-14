@@ -1,7 +1,7 @@
 const joi = require('joi');
 const HttpStatusCodes = require('http-status-codes');
 const bcrypt = require('bcrypt');
-const jwt = require('koa-jwt');
+const jwt = require('jsonwebtoken');
 
 const { User } = require('../model');
 const config = require('../config');
@@ -19,25 +19,15 @@ async function create(ctx, next) {
   }
 
   const res = await User.add(ctx.request.body);
-  ctx.body = { res };
+  ctx.body = { id: res.id };
   ctx.status = HttpStatusCodes.CREATED;
 }
 
 async function show(ctx, next) {
-  const { id } = ctx.params;
-
-  const validationResult = Joi.string().required().validate(id);
-  if (validationResult.error) {
-    ctx.throw(HttpStatus.BAD_REQUEST, validationResult.error.details[0].message);
-  }
-
-  try {
-    const res = User.findById(id);
-    ctx.body = { res };
-    ctx.status = HttpStatusCodes.OK;
-  } catch (error) {
-    ctx.throw(HttpStatusCodes.INTERNAL_SERVER_ERROR, error.msg);
-  }
+  const id = ctx.state.user.id;
+  const res = await User.findById(id);
+  ctx.body = { email: res.email };
+  ctx.status = HttpStatusCodes.OK;
 }
 
 async function login(ctx, next) {
@@ -47,7 +37,7 @@ async function login(ctx, next) {
   }
 
   const { email, password } = ctx.request.body;
-  const user = User.findByEmail(email);
+  const user = await User.findByEmail(email);
   if (!user) {
     ctx.throw(HttpStatusCodes.BAD_REQUEST, 'User is not exist');
   }

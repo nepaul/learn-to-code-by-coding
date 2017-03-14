@@ -6,5 +6,5 @@ exports.init = (router) => {
   router
   .post('/auth/login', userController.login)
   .post('/auth/register', userController.create)
-  .get('/users/:id', userController.show)
+  .get('/users', userController.show)
 }
