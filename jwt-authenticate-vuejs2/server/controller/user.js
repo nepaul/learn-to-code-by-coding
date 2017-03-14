@@ -18,7 +18,7 @@ async function create(ctx, next) {
     ctx.throw(HttpStatus.BAD_REQUEST, validationResult.error.details[0].message);
   }
 
-  const res = User.add(ctx.request.body);
+  const res = await User.add(ctx.request.body);
   ctx.body = { res };
   ctx.status = HttpStatusCodes.CREATED;
 }

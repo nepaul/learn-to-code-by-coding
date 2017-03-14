@@ -9,6 +9,8 @@ const jwt = require('koa-jwt');
 const config = require('./config');
 const Routers = require('./router');
 const models = require('./model');
+const errorHandler = require('./middleware/error-handler');
+
 
 const app = new Koa();
 
@@ -20,19 +22,7 @@ app.init = async () => {
   onerror(app);
   app.use(bodyparser());
   app.use(logger());
-  // Custom 401 handling if you don't want to expose koa-jwt errors to users
-  app.use(async (ctx, next) => {
-    try {
-      await next;
-    } catch (err) {
-      if (401 == err.status) {
-        ctx.status = 401;
-        ctx.body = 'Protected resource, use Authorization header to get access\n';
-      } else {
-        throw err;
-      }
-    }
-  });
+  app.use(errorHandler());
   app.use(jwt( { secret: config.secret }).unless({ path: [/^\/api\/v1\/auth/]}));
 
   const router = Routers.init();
