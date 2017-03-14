@@ -15,7 +15,7 @@ const UserValidationRule = {
 async function create(ctx, next) {
   const validationResult = joi.validate(ctx.request.body, UserValidationRule);
   if (validationResult.error) {
-    ctx.throw(HttpStatus.BAD_REQUEST, validationResult.error.details[0].message);
+    ctx.throw(HttpStatusCodes.BAD_REQUEST, validationResult.error.details[0].message);
   }
 
   const res = await User.add(ctx.request.body);
