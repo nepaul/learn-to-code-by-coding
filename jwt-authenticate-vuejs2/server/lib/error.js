@@ -1,3 +1,4 @@
+// TODO: use class to replace
 function VError(message, statusCode) {
   this.name = 'KError';
   this.message = message || 'Unknown Error';
