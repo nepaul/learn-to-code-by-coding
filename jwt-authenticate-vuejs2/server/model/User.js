@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 const bcrypt = require('bcrypt');
-const uuidV4 = require('uuid/v4');
+const uuidV1 = require('uuid/v1');
 
 
 module.exports = (sequelize) => {
@@ -30,7 +30,7 @@ module.exports = (sequelize) => {
       add: async function add(userInfo) {
         const salt = await bcrypt.genSalt(10);
         userInfo.password = await bcrypt.hash(userInfo.password, salt);
-        userInfo.id = uuidV4();
+        userInfo.id = uuidV1();
         const user = this.build(userInfo);
         return await user.save();
       },
