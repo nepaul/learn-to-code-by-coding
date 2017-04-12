@@ -4,7 +4,7 @@ const userController = require('../controller/user');
 
 exports.init = (router) => {
   router
-  .post('/auth/login', userController.login)
-  .post('/auth/register', userController.create)
+  .post('/auth/sessions', userController.login)
+  .post('/auth/users', userController.create)
   .get('/users', userController.show)
 }
