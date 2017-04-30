@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 export default (store) => {
-  axios.defaults.baseURL = '/api/v1';
+  axios.defaults.baseURL = 'http://localhost:3000/api/v1';
 
   axios.interceptors.request.use(
     (config) => {

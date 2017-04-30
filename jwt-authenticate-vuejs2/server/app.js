@@ -5,6 +5,7 @@ const logger = require('koa-logger');
 const Router = require('koa-router');
 const onerror = require('koa-onerror');
 const jwt = require('koa-jwt');
+const cors = require('kcors');
 
 const config = require('./config');
 const Routers = require('./router');
@@ -20,6 +21,7 @@ app.init = async () => {
     console.error('Init DB fail');
   }
   onerror(app);
+  app.use(cors());
   app.use(bodyparser());
   app.use(logger());
   app.use(errorHandler());

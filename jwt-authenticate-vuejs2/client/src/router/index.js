@@ -5,6 +5,8 @@ import NProgress from 'nprogress';
 
 import Home from '@/views/Home';
 import Dashboard from '@/views/Dashboard';
+import Login from '@/views/Login';
+import Signup from '@/views/Signup';
 // import NotFound from '@/views/NotFound';
 
 
@@ -20,9 +22,22 @@ export default (store) => {
         component: Home,
       },
       {
+        path: '/login',
+        name: 'Login',
+        component: Login,
+      },
+      {
+        path: '/signup',
+        name: 'Signup',
+        component: Signup,
+      },
+      {
         path: '/dashboard',
         name: 'Dashboard',
         component: Dashboard,
+        meta: {
+          requiredAuth: true,
+        },
       },
     ],
   });

@@ -9,6 +9,7 @@ export default {
         console.log(res);
       })
       .catch((err) => {
+        this.$message.error(err.error);
         console.log(err);
       });
   },
