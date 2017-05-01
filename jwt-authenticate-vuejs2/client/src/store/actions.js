@@ -1,3 +1,4 @@
+import Vue from 'vue';
 import * as types from './mutation-types';
 import API from '../api';
 
@@ -38,5 +39,6 @@ export default {
   },
   logout({ commit }) {
     commit(types.LOGOUT);
+    Vue.router.push('/');
   },
 };

@@ -18,6 +18,7 @@ Vue.config.productionTip = false;
 const store = initStore();
 const router = initRouter(store);
 sync(store, router);
+Vue.router = router;
 
 const axios = initAxios(store);
 Vue.prototype.$http = axios;

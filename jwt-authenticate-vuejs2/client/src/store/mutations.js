@@ -9,9 +9,10 @@ export default {
     localStorage.token = token;
   },
   [types.LOGOUT](state) {
-    state.isAuthenticate = false;
+    state.isAuthenticated = false;
     state.token = null;
-    state.user = null;
+    state.user = {};
+    localStorage.removeItem('token');
   },
   [types.FETCH_PROFILE](state, { user }) {
     state.user = user;
