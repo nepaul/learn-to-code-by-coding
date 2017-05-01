@@ -27,12 +27,11 @@ export default {
         });
     });
   },
-  login_success({ commit }, { token }) {
-    commit(types.LOGIN_SUCCESS, { token });
+  fetchProfile({ commit }) {
     API.fetchProfile()
       .then((res) => {
         console.log(res);
-        commit(types.FETCH_PROFILE, res.data);
+        commit(types.FETCH_PROFILE, { user: res.data });
       })
       .catch((err) => {
         console.log(err);
