@@ -30,7 +30,9 @@ export default {
   methods: {
     onSubmit() {
       this.$store.dispatch('login', this.form)
-        .then(() => {}, err => this.$message.error(`Login Fail: ${err.error}`));
+        .then(
+          () => this.$router.push('dashboard'),
+          err => this.$message.error(`Login Fail: ${err.error}`));
     },
   },
 };

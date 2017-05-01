@@ -7,7 +7,7 @@ export default {
     return new Promise((resolve, reject) => {
       API.login(payload)
         .then((res) => {
-          console.log(res);
+          commit(types.LOGIN_SUCCESS, { token: res.data.token });
           resolve();
         })
         .catch((err) => {
@@ -19,8 +19,8 @@ export default {
     return new Promise((resolve, reject) => {
       API.signup(payload)
         .then((res) => {
-          commit(types.LOGIN_SUCCESS, { token: res.data });
-          resolve();
+          // commit(types.LOGIN_SUCCESS, { token: res.data });
+          resolve(res);
         })
         .catch((err) => {
           reject(err);
