@@ -23,12 +23,12 @@ cd server && npm install
 npm start
 ```
 
+## TODO
+- Bind Enter Event to Login and Signup Button
+- Avalidate Input Value of Login and Signup Component
+
 ## Author
 [Poe Nee](http://nepaul.github.io/)([@xsnepaul](https://twitter.com/xsnepaul) on Twitter)
 
 ## License
 [MIT](https://github.com/nepaul/web-demos/blob/master/LICENSE)
-
-## TODO
-- Bind Enter Event to Login and Signup Button
-- Avalidate Input Value of Login and Signup Component
