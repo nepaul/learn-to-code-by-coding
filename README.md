@@ -23,6 +23,7 @@ All web apps of this repository, you can install run and use them directly.
 7. [web-workers](https://github.com/nepaul/learn-web-development-by-codes/tree/master/web-workers): A basic WebWorkers usage from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 8. [medium-like-image-loading-vuejs2](https://github.com/nepaul/learn-web-development-by-codes/tree/master/medium-like-image-loading-with-vuejs)
 9. [spider-scrapy](https://github.com/nepaul/learn-web-development-by-codes/tree/master/spider-scrapy): Crawing web by **[scrapy](https://scrapy.org/)(A Fast and Powerful Scraping and Web Crawling Framework)**
+10. [jwt-authenticate-vue](https://github.com/nepaul/learn-web-development-by-codes/tree/master/jwt-authenticate-vuejs2): **JSON Web Tokens** authenticate implementation with **Vue2 Vue-Router Vuex Axios Koa2 And MySQL**
 
 ## Author
 [Poe Nee](http://nepaul.github.io/)([@xsnepaul](https://twitter.com/xsnepaul) on Twitter)
