@@ -23,17 +23,17 @@ export default (store) => {
       },
       {
         path: '/login',
-        name: 'Login',
+        name: 'login',
         component: Login,
       },
       {
         path: '/signup',
-        name: 'Signup',
+        name: 'signup',
         component: Signup,
       },
       {
         path: '/dashboard',
-        name: 'Dashboard',
+        name: 'dashboard',
         component: Dashboard,
         meta: {
           requiredAuth: true,

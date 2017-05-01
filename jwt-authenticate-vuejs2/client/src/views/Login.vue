@@ -29,9 +29,8 @@ export default {
   },
   methods: {
     onSubmit() {
-      this.$message.error('错了哦，这是一条错误消息');
-      console.log(this.form);
-      this.$store.dispatch('login', this.form);
+      this.$store.dispatch('login', this.form)
+        .then(() => {}, err => this.$message.error(`Login Fail: ${err.error}`));
     },
   },
 };
