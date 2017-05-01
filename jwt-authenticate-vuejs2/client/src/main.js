@@ -32,3 +32,8 @@ new Vue({
   template: '<App/>',
   components: { App },
 });
+
+const token = localStorage.getItem('token');
+if (token) {
+  store.commit('auth/LOGIN_SUCCESS', { token });
+}

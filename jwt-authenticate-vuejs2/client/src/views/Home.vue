@@ -1,7 +1,7 @@
 <template>
   <el-row :gutter="20">
     <el-col :span="12" :offset="6">
-      <template v-if="!isAuthenticate">
+      <template v-if="!isAuthenticated">
         <el-button v-on:click="login">Log In</el-button>
         <el-button type="primary" v-on:click="signup">Sign Up</el-button>
       </template>
@@ -25,7 +25,7 @@ export default {
   },
   computed: {
     ...mapState([
-      'isAuthenticate',
+      'isAuthenticated',
     ]),
   },
   methods: {

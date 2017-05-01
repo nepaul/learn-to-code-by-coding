@@ -1,5 +1,5 @@
 export default {
-  isAuthenticate: false,
+  isAuthenticated: false,
   token: null,
   user: {},
 };

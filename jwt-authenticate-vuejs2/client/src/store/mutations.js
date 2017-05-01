@@ -4,8 +4,9 @@ import * as types from './mutation-types';
 
 export default {
   [types.LOGIN_SUCCESS](state, { token }) {
-    state.isAuthenticate = true;
+    state.isAuthenticated = true;
     state.token = token;
+    localStorage.token = token;
   },
   [types.LOGOUT](state) {
     state.isAuthenticate = false;
