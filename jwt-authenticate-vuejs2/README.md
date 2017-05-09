@@ -27,6 +27,9 @@ npm start
 - Bind Enter Event to Login and Signup Button
 - Avalidate Input Value of Login and Signup Component
 
+## Resource
+- [Secure Your React and Redux App with JWT Authentication](https://auth0.com/blog/secure-your-react-and-redux-app-with-jwt-authentication/)
+
 ## Author
 [Poe Nee](http://nepaul.github.io/)([@xsnepaul](https://twitter.com/xsnepaul) on Twitter)
 
