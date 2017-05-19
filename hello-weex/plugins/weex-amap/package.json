@@ -1,0 +1,22 @@
+{
+    "version": "0.0.4",
+    "platform": [
+        "ios",
+        "android"
+    ],
+    "description": "weex mapview component",
+    "keywords": [
+        "weex",
+        "map"
+    ],
+    "license": "Apache 2.0",
+    "main": "js/weex-amap.we",
+    "dependencies": {
+        "vue-amap": "^0.1.4",
+        "weex-plugin-weex-adapter-image": "*"
+    },
+    "name": "weex-amap",
+    "scripts": {
+        "postinstall": "node ./weexpack-hook.js"
+    }
+}

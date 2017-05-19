@@ -1,0 +1,18 @@
+{
+    "weex-amap": {
+        "source": {
+            "type": "registry",
+            "id": "weex-amap"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "weex-adapter-image": {
+        "source": {
+            "type": "registry",
+            "id": "weex-adapter-image"
+        },
+        "is_top_level": false,
+        "variables": {}
+    }
+}

@@ -1,0 +1,1 @@
+../../../../ATSDK/ATSDK.framework/Versions/A/Headers/ATPluginProtocol.h

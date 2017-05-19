@@ -1,0 +1,19 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "weex-amap": {
+            "PACKAGE_NAME": "com.alibaba.weex"
+        }
+    },
+    "dependent_plugins": {
+        "weex-adapter-image": {
+            "PACKAGE_NAME": "com.alibaba.weex"
+        }
+    }
+}
