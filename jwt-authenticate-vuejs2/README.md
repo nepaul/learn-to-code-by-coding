@@ -1,4 +1,4 @@
-# JWT-Authentication-Angular
+# JWT-Authentication-Vue2
 
 ## Description
 
