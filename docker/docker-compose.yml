@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  uf-mongo:
+    image: mongo
+
+  uf-api-server:
+    build: ./server
+    depends_on:
+      - uf-mongo
+    links:
+      - uf-mongo
+
+  uf-nginx:
+    build: ./client
+    depends_on:
+      - uf-api-server
+    links:
+      - uf-api-server
+    ports:
+      - "80:80"
