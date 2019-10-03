@@ -1,0 +1,15 @@
+{
+  "name": "compress-pngs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "imagemin": "^7.0.0",
+    "imagemin-pngquant": "^8.0.0"
+  }
+}
