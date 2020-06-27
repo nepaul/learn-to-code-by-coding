@@ -1,0 +1,15 @@
+{
+  "deployed": {
+    "Name": "koa_component_wy9k7r",
+    "Runtime": "Nodejs8.9",
+    "Handler": "serverless-handler.handler",
+    "MemorySize": 128,
+    "Timeout": 3,
+    "Region": "ap-shanghai",
+    "Namespace": "default",
+    "Description": "This is a function created by serverless component"
+  },
+  "codeHash": "91295ec81d673a48dd5677acb4d09521",
+  "Bucket": "sls-cloudfunction-ap-shanghai-code",
+  "Key": "sls-cloudfunction-default-koa_component_wy9k7r-1586427106.zip"
+}

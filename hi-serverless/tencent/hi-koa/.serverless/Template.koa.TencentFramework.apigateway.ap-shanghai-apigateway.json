@@ -1,0 +1,22 @@
+{
+  "protocols": [
+    "http"
+  ],
+  "subDomain": "service-brmo1hcb-1252226479.sh.apigw.tencentcs.com",
+  "environment": "release",
+  "region": "ap-shanghai",
+  "service": {
+    "value": "service-brmo1hcb",
+    "created": true
+  },
+  "apis": [
+    {
+      "path": "/",
+      "method": "ANY",
+      "apiId": {
+        "value": "api-cxnw9xly",
+        "created": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "protocols": [
+    "http"
+  ],
+  "subDomain": "service-fl086s9x-1252226479.sh.apigw.tencentcs.com",
+  "environment": "release",
+  "region": "ap-shanghai",
+  "service": {
+    "value": "service-fl086s9x",
+    "created": true
+  },
+  "apis": [
+    {
+      "path": "/",
+      "method": "ANY",
+      "apiId": {
+        "value": "api-5th69bwi",
+        "created": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "functionName": "koa_component_wy9k7r",
+  "functionOutputs": {
+    "ap-shanghai": {
+      "Name": "koa_component_wy9k7r",
+      "Runtime": "Nodejs8.9",
+      "Handler": "serverless-handler.handler",
+      "MemorySize": 128,
+      "Timeout": 3,
+      "Region": "ap-shanghai",
+      "Namespace": "default",
+      "Description": "This is a function created by serverless component"
+    }
+  },
+  "region": "ap-shanghai",
+  "apiGatewayServiceId": "service-brmo1hcb",
+  "url": "http://service-brmo1hcb-1252226479.sh.apigw.tencentcs.com/release/",
+  "cns": []
+}

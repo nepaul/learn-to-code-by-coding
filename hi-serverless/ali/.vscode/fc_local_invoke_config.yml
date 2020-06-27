@@ -1,0 +1,9 @@
+templates:
+  template.yml:
+    guide-webapp-todolist:
+      guide-todoList-function:
+        event: default_evt
+        events:
+          default_evt:
+            type: file
+            value: guide-webapp-todolist/guide-todoList-function/event.evt

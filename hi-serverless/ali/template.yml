@@ -1,0 +1,23 @@
+ROSTemplateFormatVersion: '2015-09-01'
+Transform: 'Aliyun::Serverless-2018-04-03'
+Resources:
+  hi-serverless:
+    Type: 'Aliyun::Serverless::Service'
+    Properties:
+      Description: This is hi-serverless service
+    hello-world:
+      Type: 'Aliyun::Serverless::Function'
+      Properties:
+        Handler: index.handler
+        Runtime: nodejs10
+        Timeout: 60
+        MemorySize: 512
+        CodeUri: hi-serverless/hello-world
+      Events:
+        httpTrigger:
+          Type: HTTP
+          Properties:
+            AuthType: ANONYMOUS
+            Methods:
+              - GET
+              - POST

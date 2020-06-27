@@ -1,0 +1,15 @@
+{
+  "deployed": {
+    "Name": "express_component_s828ee",
+    "Runtime": "Nodejs8.9",
+    "Handler": "serverless-handler.handler",
+    "MemorySize": 128,
+    "Timeout": 3,
+    "Region": "ap-shanghai",
+    "Namespace": "default",
+    "Description": "This is a function created by serverless component"
+  },
+  "codeHash": "caa01a5f78c369ee82ac9078fbea8a28",
+  "Bucket": "sls-cloudfunction-ap-shanghai-code",
+  "Key": "sls-cloudfunction-default-express_component_s828ee-1586105924.zip"
+}

@@ -1,0 +1,48 @@
+Resources:
+  default:
+    Type: 'TencentCloud::Serverless::Namespace'
+    hello-world:
+      Properties:
+        CodeUri: ./
+        Description: This is a template function
+        Environment:
+          Variables:
+            ENV_FIRST: env1
+            ENV_SECOND: env2
+        Handler: index.main_handler
+        MemorySize: 128
+        Timeout: 3
+        Role: QCS_SCFExcuteRole
+        Runtime: Nodejs8.9
+        # VpcConfig:
+        #   VpcId: 'vpc-qdqc5k2p'
+        #   SubnetId: 'subnet-pad6l61i'
+        # Events:
+        #   timer:
+        #     Type: Timer
+        #     Properties:
+        #       CronExpression: '*/5 * * * *'
+        #       Enable: True
+        #   cli-appid.cos.ap-beijing.myqcloud.com: # full bucket name
+        #     Type: COS
+        #     Properties:
+        #       Bucket: cli-appid.cos.ap-beijing.myqcloud.com
+        #       Filter:
+        #         Prefix: filterdir/
+        #         Suffix: .jpg
+        #       Events: cos:ObjectCreated:*
+        #       Enable: True
+        #   topic:            # topic name
+        #     Type: CMQ
+        #     Properties:
+        #       Name: qname
+        #   hello_world_apigw:  # ${FunctionName} + '_apigw'
+        #     Type: APIGW
+        #     Properties:
+        #       StageName: release
+        #       ServiceId: 
+        #       HttpMethod: ANY
+      Type: 'TencentCloud::Serverless::Function'
+Globals:
+  Function:
+    Timeout: 10

@@ -1,0 +1,19 @@
+{
+  "functionName": "express_component_s828ee",
+  "functionOutputs": {
+    "ap-shanghai": {
+      "Name": "express_component_s828ee",
+      "Runtime": "Nodejs8.9",
+      "Handler": "serverless-handler.handler",
+      "MemorySize": 128,
+      "Timeout": 3,
+      "Region": "ap-shanghai",
+      "Namespace": "default",
+      "Description": "This is a function created by serverless component"
+    }
+  },
+  "region": "ap-shanghai",
+  "apiGatewayServiceId": "service-fl086s9x",
+  "url": "http://service-fl086s9x-1252226479.sh.apigw.tencentcs.com/release/",
+  "cns": []
+}

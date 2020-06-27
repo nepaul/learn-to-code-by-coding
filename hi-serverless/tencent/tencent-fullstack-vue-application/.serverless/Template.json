@@ -1,0 +1,6 @@
+{
+  "components": {
+    "dashboard": "/Users/nibo/.serverless/components/registry/npm/@serverless/tencent-website@1.2.23/node_modules/@serverless/tencent-website",
+    "api": "/Users/nibo/.serverless/components/registry/npm/@serverless/tencent-express@3.0.6/node_modules/@serverless/tencent-express"
+  }
+}

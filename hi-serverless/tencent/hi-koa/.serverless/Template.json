@@ -1,0 +1,5 @@
+{
+  "components": {
+    "koa": "/Users/nibo/.serverless/components/registry/npm/@serverless/tencent-koa@3.0.6/node_modules/@serverless/tencent-koa"
+  }
+}

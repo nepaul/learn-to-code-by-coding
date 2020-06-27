@@ -1,0 +1,4 @@
+koa:
+  component: "@serverless/tencent-koa"
+  inputs:
+    region: ap-shanghai
