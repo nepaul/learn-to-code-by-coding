@@ -32,7 +32,7 @@
     "koa-onerror": "^3.1.0",
     "koa-router": "^7.0.1",
     "mysql": "^2.13.0",
-    "sequelize": "^3.30.2",
+    "sequelize": "^6.3.5",
     "uuid": "^3.0.1"
   },
   "devDependencies": {
