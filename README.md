@@ -1,4 +1,4 @@
-# Learn web development by codes
+# Learn development by codes
 
 > "Talk is cheap. Show me the code."  -- Linus Torvalds 
 
