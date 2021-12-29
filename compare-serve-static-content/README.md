@@ -40,13 +40,13 @@ Obvious, nginx performance is more better then node to serve static contents.
 
 #### nginx server
 
-![nginx-report](http://7xja18.com1.z0.glb.clouddn.com/Nginx-Report.png)
-![nginx-server](http://7xja18.com1.z0.glb.clouddn.com/nginx-server.png)
+![nginx-report](./report/nginx-report.png)
+![nginx-server](./report/nginx-server.png)
 
 #### Node server
 
-![node-report](http://7xja18.com1.z0.glb.clouddn.com/NODE-Report.png)
-![node-server](http://7xja18.com1.z0.glb.clouddn.com/node-server.png)
+![node-report](./report/node-report.png)
+![node-server](./report/node-server.png)
 
 ## Author
 
