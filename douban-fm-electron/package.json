@@ -1,0 +1,31 @@
+{
+  "name": "douban-fm-electron",
+  "version": "0.1.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder",
+    "package-all": " electron-builder build -mwl",
+    "package-ci": "electron-builder --publish always",
+    "package-linux": "electron-builder build --linux",
+    "package-win": "electron-builder build --win --x64"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Poe",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "6.1.6",
+    "electron-builder": "^21.2.0"
+  },
+  "build": {
+    "productName": "DoubanFM"
+  }
+}
