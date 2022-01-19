@@ -13,7 +13,7 @@ enjoy it..
 
 ## Apps
 
-All web apps of this repository, you can install run and use them directly.
+All applications of this repository, you can install run and use them directly.
 
 1. [jwt-authenticate-angular](https://github.com/nepaul/web-demos/tree/master/jwt-authenticate-angular): **JSON Web Tokens** authenticate implementation with **AngularJS Angular-Material KoaJS And MongoDB**
 2. [simple-koa-app](https://github.com/nepaul/web-demos/tree/master/simple-koa-app): A simple KoaJS app implementation with **KoaJS SQLite3 Ejs and [MDL](https://getmdl.io/started)**
