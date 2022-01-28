@@ -29,6 +29,7 @@ All applications of this repository, you can install run and use them directly.
 12. [docker](https://github.com/nepaul/learn-to-code-by-coding/tree/master/docker): Use docker and docker-compose, Dockerfile and docker-compose file.
 13. [douban-fm-electron](https://github.com/nepaul/learn-to-code-by-coding/tree/master/douban-fm-electron): DouBan FM PC Client.
 14. [hi-go](https://github.com/nepaul/learn-to-code-by-coding/tree/master/hi-go): A Glance of Go.
+15. [300secs-create-a-desktop-application-tauri](https://github.com/nepaul/learn-to-code-by-coding/tree/master/300secs-create-a-desktop-application-tauri)
 
 ## Author
 
