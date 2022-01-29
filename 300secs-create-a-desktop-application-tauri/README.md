@@ -44,6 +44,23 @@ yarn add -D @tauri-apps/cli
 - Q: import libraries.
  A: ❗️**TODO**(maybe sth wrong about [browser-fs-access](https://www.npmjs.com/package/browser-fs-access))
 
+## Some Tips
+
+### How to debug tauri apps
+
+**Dev:**
+
+1. `tauri dev`, it will automatically launch the application
+2. `F12`(Windows) or `cmd+alt+i`(Mac) to open DevTools; Right mouse click and then inspect elements
+
+**Build:**
+
+1. `tauri build --debug`
+2. `F12`(Windows) or `cmd+alt+i`(Mac) to open DevTools; Right mouse click and then inspect elements
+
+If your application listen for all keyboard events and right mouse click events,
+you may can't open DevTools.
+
 ## References
 
 - [What is Tauri? | Tauri Studio](https://tauri.studio/docs/about/intro/)
