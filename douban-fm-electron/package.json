@@ -22,7 +22,7 @@
   "author": "Poe",
   "license": "MIT",
   "devDependencies": {
-    "electron": "6.1.6",
+    "electron": "15.5.5",
     "electron-builder": "^21.2.0"
   },
   "build": {
