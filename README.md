@@ -31,10 +31,6 @@ All applications of this repository, you can install run and use them directly.
 14. [hi-go](https://github.com/nepaul/learn-to-code-by-coding/tree/master/hi-go): A Glance of Go.
 15. [300secs-create-a-desktop-application-tauri](https://github.com/nepaul/learn-to-code-by-coding/tree/master/300secs-create-a-desktop-application-tauri)
 
-## Author
-
-[Bo Ni](https://nepaul.github.io/)([@xsnepaul](https://twitter.com/xsnepaul) on Twitter)
-
 ## Licensing
 
 [MIT](https://github.com/nepaul/web-demos/blob/master/LICENSE)
